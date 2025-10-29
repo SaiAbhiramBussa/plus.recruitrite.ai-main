@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <table border="0" cellpadding="5" cellspacing="5" width="100%" role="presentation" data-max-width="660"
+        style="max-width: 660px; min-width: 600px; font-family: 'Graphik Web','Helvetica Neue',Helvetica,Arial,Verdana,sans-serif;margin: auto;" ;>
+        <tbody>
+            <tr>
+                <td
+                    class="mceBlockContainer" align="center" valign="top"><img data-block-id="3" width="247"
+                        height="auto" style="width:110pt;height:25pt;display:block; margin-top: 5px;margin-bottom: 5px;"
+                        alt="Logo"
+                        src="https://startdate-images-1.s3.us-west-1.amazonaws.com/startdate-resources/startdate_logo.png"
+                        class="">
+                </td>
+            </tr>
+            <tr>
+                <td
+                    class="mceBlockContainer" valign="top">
+                    <div data-block-id="5" class="mceText" id="dataBlockId-5" style="width:100%">
+                        <p>Hi {{first_name}},</p>
+                        <p class="last-child">I sent you a couple of emails recently with the offer to help you find some great talent for your {{title}} role. Your company is eligible for a free trial, please have a look at the candidates that we’ve found for you. </p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table border="0" cellpadding="20" cellspacing="1" width="100%" role="presentation"
+                        style="table-layout: fixed;">
+                        <colgroup>
+                            <col span="1" width="8.333333333333332%">
+                            <col span="1" width="8.333333333333332%">
+                            <col span="1" width="8.333333333333332%">
+                            <col span="1" width="8.333333333333332%">
+                            <col span="1" width="8.333333333333332%">
+                            <col span="1" width="8.333333333333332%">
+                            <col span="1" width="8.333333333333332%">
+                            <col span="1" width="8.333333333333332%">
+                            <col span="1" width="8.333333333333332%">
+                            <col span="1" width="8.333333333333332%">
+                            <col span="1" width="8.333333333333332%">
+                            <col span="1" width="8.333333333333332%">
+                        </colgroup>
+                        <tbody>
+                            <tr>    
+                                {% for item in matched_candidates %}
+                                <td class="mceColumn" data-block-id="61" valign="top" colspan="4" width="30%"
+                                    style="padding-top: 0px; padding-bottom: 0px; background-color: rgba(163, 160, 160, 0.064); border-radius: 12px; border: 1px solid #80808038;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
+                                        <tbody>
+                                            <tr>
+                                                <td class="mceBlockContainer" align="center" valign="top"
+                                                    >
+                                                    <img data-block-id="58" width="193" height="auto" alt=""
+                                                        src="{{item.picture}}"
+                                                        role="presentation" class="imageDropZone"
+                                                        style="width: 100px; height: 100px; max-width: 100%; max-height: 100%; display: block;mix-blend-mode: multiply;">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="mceBlockContainer" valign="top" style=" font-size: smaller;">
+                                                    <div data-block-id="59" data-rich-text="true" class="mceText"
+                                                        id="dataBlockId-59" style="width: 100%;">
+                                                        <div>
+                                                            <div translate="no" tabindex="-1" class="ProseMirror">
+                                                                <h4
+                                                                    style="word-break: break-all; color: rgb(88, 32, 208); text-align: center;">
+                                                                    Accuracy —
+                                                                    {{item.accuracy}}%</h4>
+                                                                <p style="word-break: break-all;">
+                                                                    <span
+                                                                        style="font-size :12px; color: transparent;text-shadow: 0 0 10px #000; user-select: none; margin-top: 5px;">
+                                                                        <div style="display: flex; justify-content: space-between; width: 100%; margin-top: 5px;">
+                                                                            <span style="width: 50%;">Name —</span>
+                                                                            <img style="width: 50%; opacity: .4; height: 16px;"
+                                                                                src="https://www.pngarts.com/files/10/Blur-PNG-Pic.png"
+                                                                                alt="img" srcset="">
+                                                                        </div>
+                                                                        <div style="display: flex; justify-content: space-between; width: 100%; margin-top: 5px;">
+                                                                            <span style=" width: 50%;">Phn no. —</span>
+                                                                            <img style="width: 50%; opacity: .4; height: 16px;"
+                                                                                src="https://www.pngarts.com/files/10/Blur-PNG-Pic.png"
+                                                                                alt="img" srcset="">
+                                                                        </div>
+                                                                        <div style="display: flex; justify-content: space-between; width: 100%; margin-top: 5px;">
+                                                                            <span style="width: 50%;">Location —</span>
+                                                                            <span style="width: 50%;">{{item.loc}}</span>
+                                                                        </div>
+                                                                        <div style="display: flex; justify-content: space-between; width: 100%; margin-top: 5px;">
+                                                                            <span style="width: 50%;">Skills —</span>
+                                                                            <span style="width: 50%;">
+                                                                                {% for s in item.skill %}
+                                                                                    {{s}}
+                                                                                {% endfor %}</span>
+                                                                        </div>
+                                                                    </span>
+                                                                </p>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                {% endfor %}
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>    
+            <tr>
+                <td class="mceBlockContainer" align="center" valign="top" >
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation"
+                        data-block-id="55" data-rich-text="true" style="max-width: 282px;">
+                        <tbody>
+                            <tr class="mceStandardButton">
+                                <td class="mceButton" valign="top"
+                                    style="background-color: rgb(88, 32, 208); border-radius: 0px; text-align: center;">
+                                    <a href='{{activate_link}}' data-button-block-id="55"
+                                        tabindex="-1"
+                                        style="background-color: rgb(88, 32, 208); border-radius: 0px; border: 1px solid rgb(255, 255, 255); color: rgb(255, 255, 255); display: block; font-family: Helvetica Neue, Helvetica, Arial, Verdana, sans-serif; font-size: 16px; font-weight: normal; font-style: normal; padding: 16px 28px; text-decoration: none; min-width: 30px; text-align: center; direction: ltr; letter-spacing: 0px;">
+                                        <div>
+                                            <div translate="no" tabindex="-1" class="ProseMirror">Activate Plan</div>
+                                        </div>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td
+                    class="mceBlockContainer" valign="top">
+                    <div data-block-id="23" class="mceText" id="dataBlockId-23" style="width:100%">
+                        
+                        <p>Access StartDate for free. Click on
+                            this&nbsp;<a href="https://startdate.co/" title="https://startdate.co/">link</a>&nbsp;and
+                            see the
+                            most optimized candidates for free.</p>
+                        
+                        <p><a href="https://startdate.co/" title="https://startdate.co/">StartDate</a>&nbsp;is
+                            a
+                            recruiting firm that can help your
+                            recruiting efforts at
+                            various levels and price points. We often
+                            work as a
+                            complement to your HR and recruiting team,
+                            sometimes in
+                            helping with just the 'hard to find' roles
+                            and sometimes in
+                            more of a robust solution. We have a volume
+                            of
+                            recommendations that we can share with you.
+                            If you'd like to
+                            chat with someone regarding our services,
+                            below are a
+                            few.&nbsp;</p>
+                        
+                        <p>Here is a&nbsp;<a href={{help_employer}}
+                                title="https://startdate.co/recruiting-help-for-employers">link</a>&nbsp;to
+                            our recruiting options, we can meet your
+                            needs at whatever
+                            level you might need our help with. Here are
+                            a couple of
+                            options:&nbsp;</p>
+                        <ul>
+                            <li>
+                                <p><a href="{{FlatFeelink}} target=" _blank">FlatFee
+                                        Recruiting</a>&nbsp;-
+                                    saving you 85% of the typical
+                                    recruiting cost</p>
+                            </li>
+                            <li>
+                                <p><a href="{{FullServicelink}}" target="_blank">FullService
+                                        Recruiting&nbsp;</a>- volume
+                                    discounts for '23.
+                                    We can negotiate what works for your
+                                    company, all
+                                    the while providing you full
+                                    guarantees with your
+                                    hires.</p>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="mceBlockContainer" align="center" valign="top">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation"
+                        data-block-id="55" data-rich-text="true" style="max-width: 282px;">
+                        <tbody>
+                            <tr class="mceStandardButton">
+                                <td class="mceButton" valign="top"
+                                    style="background-color: rgb(88, 32, 208); border-radius: 0px; text-align: center;">
+                                    <a href='{{activate_link}}' data-button-block-id="55"
+                                        tabindex="-1"
+                                        style="background-color: rgb(88, 32, 208); border-radius: 0px; border: 1px solid rgb(255, 255, 255); color: rgb(255, 255, 255); display: block; font-family: Helvetica Neue, Helvetica, Arial, Verdana, sans-serif; font-size: 16px; font-weight: normal; font-style: normal; padding: 16px 28px; text-decoration: none; min-width: 30px; text-align: center; direction: ltr; letter-spacing: 0px;">
+                                        <div>
+                                            <div translate="no" tabindex="-1" class="ProseMirror">Activate Plan</div>
+                                        </div>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
+                        <tbody>
+                            <tr>
+                                <td class="mceBlockContainer" align="center" valign="top">
+                                    <div data-block-id="9" data-rich-text="true" class="mceText" id="dataBlockId-9"
+                                        style="display: inline-block; width: 100%;">
+                                        <div>
+                                            <div translate="no" tabindex="-1"
+                                                class="ProseMirror">
+                                                <p><br class="empty-node"><span
+                                                        style="font-size: 12px">We
+                                                        hope
+                                                        you're
+                                                        enjoying
+                                                        our
+                                                        emails
+                                                        and
+                                                        finding
+                                                        them
+                                                        useful.
+                                                        However,
+                                                        if
+                                                        you
+                                                        wish
+                                                        to
+                                                        unsubscribe
+                                                        and
+                                                        no
+                                                        longer
+                                                        receive
+                                                        our
+                                                        updates,
+                                                        you
+                                                        can
+                                                        do
+                                                        so
+                                                        by
+                                                        following
+                                                        clicking
+                                                        on
+                                                        this
+                                                    </span><a href={{unsubscribe_link}} tabindex="-1"><span
+                                                            style="font-size: 12px">unsubscribe
+                                                            link.</span></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+Folder for saving the candidates and job description txt for prescreened candidates in the background job.

@@ -1,0 +1,1 @@
+{{environment}}Your Payment has been processed for the {{subscription_type}} Subscription Plan with StartDate

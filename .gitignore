@@ -1,0 +1,94 @@
+# backend dependencies
+src/api/.idea/
+src/api/venv/
+src/api/startdate/__pycache__
+src/api/startdate/middleware/__pycache__
+src/api/candidate/__pycache__
+src/api/candidate/migrations/__pycache__
+src/api/candidate/classes/__pycache__
+src/api/accounts/__pycache__
+src/api/accounts/migrations/__pycache__
+src/api/company/__pycache__
+src/api/company/migrations/__pycache__
+src/api/job_posting/__pycache__
+src/api/job_posting/migrations/__pycache__
+src/api/machine_learning/__pycache__
+src/api/machine_learning/migrations/__pycache__
+src/api/celery_jobs/__pycache__
+src/api/celery_jobs/migrations/__pycache__
+src/api/machine_learning/__pycache__
+src/api/machine_learning/migrations/__pycache__
+src/api/payment_history/__pycache__
+src/api/payment_history/migrations/__pycache__
+src/api/adwerks/__pycache__
+src/api/adwerks/migrations/__pycache__
+src/api/location/__pycache__
+src/api/location/migrations/__pycache__
+src/api/integrations/__pycache__
+src/api/integrations/migrations/__pycache__
+src/api/genai_profile/__pycache__
+src/api/genai_profile/migrations/__pycache__
+src/api/powered_by/__pycache__
+src/api/powered_by/migrations/__pycache__
+src/api/powered_by/classes/__pycache__
+src/api/playground/__pycache__
+src/api/playground/migrations/__pycache__
+src/api/playground/classes/__pycache__
+src/api/startdate/classes/__pycache__
+src/api/model_training/__pycache__
+src/api/model_training/migrations/__pycache__
+src/api/shareable_link/__pycache__
+src/api/shareable_link/migrations/__pycache__
+src/api/.pytech_cache
+src/api/dump.rdb
+src/api/*.pickle
+.idea/
+.vscode/
+__pycache__
+.DS_Store
+**/.DS_Store
+
+# UI dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+
+#UI Dependencies
+src/ui/.next
+src/ui/node_modules
+src/ui/out/
+src/ui/src/config/
+
+# production
+src/ui/build
+
+# db
+data
+
+# misc
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+
+# vercel
+.vercel
+
+# local log files
+src/api/logs/*
+# Test commit
+# Build
+src/ui/webDist/*
+
+#env
+.env
+**/.env

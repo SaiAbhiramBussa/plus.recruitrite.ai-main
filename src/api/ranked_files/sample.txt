@@ -1,0 +1,1 @@
+Folder for saving the candidates and job description txt for ranked candidates for training in the run time.

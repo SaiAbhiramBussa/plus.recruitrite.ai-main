@@ -1,0 +1,70 @@
+[
+  {
+    "plan": "free",
+    "title": "Free Plan",
+    "cost": "$0",
+    "credits": 30,
+    "benefits": 
+    [
+      "30 candidate reveals / month","Filter through 100's of sourced candidates","See analysis of matched authenticity","Gain contactable information to pursue","Export candidates into your hiring process"
+    ]
+  },
+  {
+    "plan": "silver",
+    "title": "Silver Plan",
+    "cost": "$299",
+    "credits": 30,
+    "benefits": 
+    [
+      "30 candidate reveals / month","Filter through 100's of sourced candidates","See analysis of matched authenticity","Gain contactable information to pursue","Export candidates into your hiring process"
+    ],
+    "product_api_id": "price_1MqxHnH3cBL7v3zGICVGq8G9"
+  },
+  {
+    "plan": "gold",
+    "title": "Gold Plan",
+    "cost": "$399",
+    "credits": 30,
+    "benefits": 
+    [
+      "exponential candidate reveals / month (everything with Silver Plan)",
+      "Multiple requisitions per month",
+      "Reveal rollovers - use unused credits the following months",
+      "Sourcing and processing medley",
+      "Export all candidates and rankings",
+      "Enterprise solutions available"
+    ],
+    "product_api_id": "price_1MqxH5H3cBL7v3zGaEyXjiK3"
+  },
+  {
+    "plan": "flat-fee",
+    "title": "Flat Fee",
+    "cost": "$399",
+    "credits": 30,
+    "benefits": 
+    [
+      "exponential candidate reveals / month (everything with Silver Plan)",
+      "Multiple requisitions per month",
+      "Reveal rollovers - use unused credits the following months",
+      "Sourcing and processing medley",
+      "Export all candidates and rankings",
+      "Enterprise solutions available"
+    ],
+    "product_api_id": "price_1MqxG1H3cBL7v3zGLwbbvbjF"
+  },
+  {
+    "plan": "full-service",
+    "title": "Full Service",
+    "cost": "$399",
+    "credits": 30,
+    "benefits": 
+    [
+      "exponential candidate reveals / month (everything with Silver Plan)",
+      "Multiple requisitions per month",
+      "Reveal rollovers - use unused credits the following months",
+      "Sourcing and processing medley",
+      "Export all candidates and rankings",
+      "Enterprise solutions available"
+    ]
+  }
+]
